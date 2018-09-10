@@ -1,0 +1,77 @@
+// [
+//   {
+    
+//     "uid": "web_socket0",
+//     "append": true,
+//     "watch": true,
+//     "script": "main.js",
+//     "sourceDir": "/home/ricardo/practicas/mascotas/Nodejs",
+//     "args": ["3000"]
+//   },
+//   {
+    
+//     "uid": "web_socket1",
+//     "append": true,
+//     "watch": true,
+//     "script": "main.js",
+//     "sourceDir": "/home/ricardo/practicas/mascotas/Nodejs",
+//     "args": ["3001"]
+//   },
+//   {
+    
+//     "uid": "web_socket2",
+//     "append": true,
+//     "watch": true,
+//     "script": "main.js",
+//     "sourceDir": "/home/ricardo/practicas/mascotas/Nodejs",
+//     "args": ["3002"]
+//   },
+//   {
+    
+//     "uid": "web_socket3",
+//     "append": true,
+//     "watch": true,
+//     "script": "main.js",
+//     "sourceDir": "/home/ricardo/practicas/mascotas/Nodejs",
+//     "args": ["3003"]
+//   }
+// ]
+
+[
+  {
+    
+    "uid": "web_socket0",
+    "append": true,
+    "watch": true,
+    "script": "main.js",
+    "sourceDir": "/home/ricardo/practicas/mascotas/Nodejs",
+    "args": ["3000"]
+  },
+  {
+    
+    "uid": "web_socket1",
+    "append": true,
+    "watch": true,
+    "script": "main.js",
+    "sourceDir": "/home/ricardo/practicas/mascotas/Nodejs",
+    "args": ["3001"]
+  },
+  {
+    
+    "uid": "web_socket2",
+    "append": true,
+    "watch": true,
+    "script": "main.js",
+    "sourceDir": "/home/ricardo/practicas/mascotas/Nodejs",
+    "args": ["3002"]
+  },
+  {
+    
+    "uid": "web_socket3",
+    "append": true,
+    "watch": true,
+    "script": "main.js",
+    "sourceDir": "/home/ricardo/practicas/mascotas/Nodejs",
+    "args": ["3003"]
+  }
+]

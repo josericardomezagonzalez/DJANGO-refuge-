@@ -1,0 +1,967 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"A",
+				"AdoptionUpdateView\tclass"
+			],
+			[
+				"Adop",
+				"AdoptionCreateView\tclass"
+			],
+			[
+				"getO",
+				"get_object\tfunction"
+			],
+			[
+				"cre",
+				"create_pet\tstatement"
+			],
+			[
+				"moc",
+				"mock_pet_list\tstatement"
+			],
+			[
+				"Petc",
+				"PetCreateUpdateMixin\tclass"
+			],
+			[
+				"view",
+				"views\tmodule"
+			],
+			[
+				"Mo",
+				"Mock\tmodule"
+			],
+			[
+				"mock",
+				"mockPetClass\tparam"
+			],
+			[
+				"mockPet",
+				"mockPetFormClass"
+			],
+			[
+				"asser",
+				"assertEqual\tfunction"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"pet_c",
+				"pet_charac_list\tstatement"
+			],
+			[
+				"pet",
+				"pet_charac_list\tstatement"
+			],
+			[
+				"get",
+				"getattr\tfunction"
+			],
+			[
+				"va",
+				"vaccine\tstatement"
+			],
+			[
+				"PetCa",
+				"PetCharacterist\tclass"
+			],
+			[
+				"data_pet",
+				"data_pet_caract"
+			],
+			[
+				"data_p",
+				"data_pet_caract\tstatement"
+			],
+			[
+				"data_pe",
+				"data_pet_caract"
+			],
+			[
+				"di",
+				"dict\tclass"
+			],
+			[
+				"pET",
+				"PetCharacterist\tclass"
+			],
+			[
+				"data",
+				"data_pet_caract\tstatement"
+			],
+			[
+				"form",
+				"formset\tstatement"
+			],
+			[
+				"for",
+				"formset_class\tstatement"
+			],
+			[
+				"pe",
+				"petcarac\tstatement"
+			],
+			[
+				"PetC",
+				"PetCharacteristForm\tclass"
+			],
+			[
+				"Pet",
+				"PetCharacteristForm\tclass"
+			],
+			[
+				"Pe",
+				"PetCharacteristForm\tclass"
+			],
+			[
+				"PetCharacteristForm",
+				"PetCharacteristFormSet\tstatement"
+			],
+			[
+				"pr",
+				"print\tfunction"
+			],
+			[
+				"forms",
+				"formset\tstatement"
+			],
+			[
+				"gett",
+				"getattr\tgetattr"
+			],
+			[
+				"reas",
+				"reasons"
+			],
+			[
+				"adop",
+				"adoption_data\tstatement"
+			],
+			[
+				"per",
+				"person\tstatement"
+			],
+			[
+				"adopt",
+				"adoption_data\tstatement"
+			],
+			[
+				"co",
+				"commit\tparam"
+			],
+			[
+				"ad",
+				"adoptionapplication\tstatement"
+			],
+			[
+				"dat",
+				"data_pet\tstatement"
+			],
+			[
+				"wi",
+				"widget"
+			],
+			[
+				"get_form2",
+				"get_form2_kwargs\tfunction"
+			],
+			[
+				"pers",
+				"person_data\tstatement"
+			],
+			[
+				"in",
+				"instance\tparam"
+			],
+			[
+				"fiel",
+				"fields"
+			],
+			[
+				"file",
+				"fields"
+			],
+			[
+				"fil",
+				"fields"
+			],
+			[
+				"fie",
+				"fields"
+			],
+			[
+				"vac",
+				"vaccine1\tstatement"
+			],
+			[
+				"ado",
+				"adoption\tstatement"
+			],
+			[
+				"assert",
+				"assertEquals\tstatement"
+			],
+			[
+				"ass",
+				"assertEqual\tfunction"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"re",
+				"return\tkeyword"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/ricardo/Escritorio/RabbitMQ/tutoria2/new_task.js",
+			"settings":
+			{
+				"buffer_size": 447,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/ricardo/Escritorio/RabbitMQ/tutoria2/worker.js",
+			"settings":
+			{
+				"buffer_size": 628,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Anaconda Python Builder",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Anaconda Python Builder",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/ricardo/Escritorio/RabbitMQ",
+		"/home/ricardo/Escritorio/RabbitMQ/tutoria2"
+	],
+	"file_history":
+	[
+		"/home/ricardo/Escritorio/comandos para pyenc",
+		"/home/ricardo/Escritorio/RabbitMQ/tutoria1/send.js",
+		"/home/ricardo/Escritorio/carpeta sin título/send.js",
+		"/home/ricardo/Escritorio/RabbitMQ/send.js",
+		"/home/ricardo/Escritorio/RabbitMQ/receive.js",
+		"/home/ricardo/Documentos/sistemas programables/cliente/package.json",
+		"/home/ricardo/Documentos/sistemas programables/cliente-servidor-node/package.json",
+		"/home/ricardo/practicas/mascotas/refuge/forms.py",
+		"/home/ricardo/practicas/mascotas/refuge/test_view.py",
+		"/home/ricardo/practicas/mascotas/refuge/urls.py",
+		"/home/ricardo/.pyenv/versions/practicasenv/lib/python3.6/site-packages/django/views/generic/base.py",
+		"/home/ricardo/.pyenv/versions/practicasenv/lib/python3.6/site-packages/django/views/generic/edit.py",
+		"/home/ricardo/practicas/mascotas/refuge/models.py",
+		"/home/ricardo/practicas/mascotas/refuge/views.py",
+		"/home/ricardo/.config/sublime-text-3/Packages/User/javaScript.sublime-build",
+		"/home/ricardo/practicas/mascotas/refuge/unittest.py",
+		"/home/ricardo/Escritorio/send.js",
+		"/home/ricardo/.pyenv/versions/practicasenv/lib/python3.6/site-packages/django/views/generic/detail.py",
+		"/home/ricardo/Escritorio/AsincroImage/future_image.py",
+		"/home/ricardo/Escritorio/AsincroImage/test/tests.py",
+		"/home/ricardo/practicas/mascotas/comentarios.py",
+		"/home/ricardo/practicas/mascotas/refuge/unittest",
+		"/home/ricardo/Escritorio/anotaciones",
+		"/home/ricardo/practicas/mascotas/refuge/test_form.py",
+		"/home/ricardo/practicas/mascotas/refuge/mixins.py",
+		"/home/ricardo/practicas/mascotas/mascotas/settings.py",
+		"/home/ricardo/.config/sublime-text-3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/home/ricardo/practicas/mascotas/templates/form/form.html",
+		"/home/ricardo/practicas/mascotas/refuge/formset.py",
+		"/home/ricardo/practicas/mascotas/static/js/jquery.formset.js",
+		"/home/ricardo/practicas/mascotas/templates/base/base.html",
+		"/home/ricardo/Escritorio/class B(Exception):",
+		"/home/ricardo/practicas/mascotas/templates/adoption/AdoptionList.html",
+		"/home/ricardo/practicas/mascotas/templates/pet/pet_list.html",
+		"/home/ricardo/practicas/mascotas/refuge/migrations/0002_auto_20180702_2300.py",
+		"/home/ricardo/practicas/mascotas/templates/people/people_list.html",
+		"/home/ricardo/practicas/mascotas/templates/people/user_list.html",
+		"/home/ricardo/practicas/mascotas/usuario/views.py",
+		"/home/ricardo/practicas/mascotas/refuge/test_selenium.py",
+		"/home/ricardo/practicas/mascotas/usuario/tests.py",
+		"/home/ricardo/practicas/mascotas/refuge/admin.py",
+		"/home/ricardo/.config/sublime-text-3/Packages/AutoPEP8/AutoPep8.sublime-settings",
+		"/home/ricardo/.config/sublime-text-3/Packages/AutoPEP8/Default.sublime-keymap",
+		"/home/ricardo/practicas/mascotas/refuge/apps.py",
+		"/home/ricardo/practicas/mascotas/mascotas.sublime-project",
+		"/home/ricardo/.config/sublime-text-3/Packages/Python PEP8 Autoformat/pep8_autoformat.sublime-settings",
+		"/home/ricardo/.config/sublime-text-3/Packages/HTMLBeautify/HTMLBeautify.sublime-settings"
+	],
+	"find":
+	{
+		"height": 54.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+			"/home/ricardo/practicas/mascotas/",
+			"/home/ricardo/practicas/mascotas/refuge"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"“",
+			"...",
+			">>>",
+			"...",
+			"petcharacterist",
+			"PetCharacterist",
+			"TransactionTestCase",
+			"TestCase",
+			"color",
+			"',\n",
+			"...",
+			"\"",
+			"VALUEPERSON",
+			"ATTRIPERSON",
+			"VALUE",
+			"ATTRI",
+			" test_update_pet_data_has_permissions",
+			" test_update_pet_data_has_permissions ",
+			"pk",
+			"idsearch",
+			"StaticLive",
+			"__",
+			"hasout",
+			"with",
+			"people",
+			"People",
+			"(LoginMixin",
+			"PEOPLE",
+			"75",
+			"People",
+			"people",
+			"People",
+			"BaseTestMixin",
+			"BaseTestMixin)",
+			"79",
+			"(BaseTestWithLoginMixin)",
+			"BaseTestMixinWithLogin",
+			".as_view()",
+			"prin"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"",
+			"",
+			"petcharacteristic",
+			"PetCharacteristic",
+			"TestCase",
+			"TransactionTestCase",
+			"",
+			"'",
+			"valueperson",
+			"attriperson",
+			"value",
+			"attri",
+			"person_pk",
+			"pk",
+			"Live",
+			"_",
+			"has_not",
+			"has",
+			"person",
+			"Person",
+			"ViewTest(LoginMixin",
+			"PERSON",
+			"Person",
+			"person",
+			"Person",
+			"BaseTestMixin, StaticLiveServerTestCase",
+			"BaseTestMixin, StaticLiveServerTestCase)",
+			"(BaseTestWithLoginMixin, TestCase)",
+			"BaseTestWithLoginMixin",
+			"View.as_view()"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/ricardo/Escritorio/RabbitMQ/tutoria2/new_task.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 447,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								232,
+								232
+							],
+							[
+								447,
+								447
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										375,
+										376
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										139,
+										140
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/ricardo/Escritorio/RabbitMQ/tutoria2/worker.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								213,
+								213
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										225,
+										226
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										211,
+										212
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										225,
+										226
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										211,
+										212
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 58.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.autopep8":
+	{
+		"height": 36.0
+	},
+	"output.exec":
+	{
+		"height": 150.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/javaScript.sublime-build",
+	"project": "mascotas.sublime-project",
+	"replace":
+	{
+		"height": 94.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 132.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

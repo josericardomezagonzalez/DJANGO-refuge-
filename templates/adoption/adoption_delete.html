@@ -1,0 +1,10 @@
+{% extends 'base/base.html' %}
+{% block title %} Adoption Delete {% endblock%}
+ {%block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    <h3>¿Desea elimiar el registro de {{object.people.name}} {{object.people.last_name}}</h3>
+    <button class="btn btn-danger" name="delete" type="submit">Si,Eliminar </button>
+    <a class="btn btn-success" name="cancel" href="{% url 'refuge:adoption_list' %}">Cancelar </a>
+</form>
+{% endblock %}

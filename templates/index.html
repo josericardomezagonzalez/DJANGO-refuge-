@@ -1,0 +1,42 @@
+{% extends 'base/base.html' %} 
+{% block title %} Login {% endblock%}
+{% block navbar %} {% endblock%} {% block content %}
+<form name="login-form" action="" method="post">
+    {% csrf_token %}
+    <div class="container">
+        <h2 class="text-center">Datos del Usuario</h2>
+        <div class="row">
+            <div class="col-xs-offset-2 col-10">
+                <div class="form-group">
+                    <label>Nombre de Usuario</label>
+                    <input class="form-control" type="text" name="username">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-2 col-10">
+                <div class="form-group">
+                    <label>Contraseña</label>
+                    <input class="form-control" type="password" name="password">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-2 col-10">
+                <div class="form-group">
+                    <a href="{% url 'password_reset' %}">Olvide mi contraseña</a>
+                    <input class="btn btn-primary" name="login" type="submit" value="Ingresar">
+                </div>
+                 <a href="{% url 'user:user_register' %}">Registrarme</a>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+
+
+{% endblock %}
+
+{% block footer %}
+{% endblock%}

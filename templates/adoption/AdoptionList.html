@@ -1,0 +1,33 @@
+{% extends 'base/base.html' %} 
+{% block title %} Adoption List {% endblock%}
+{% block content %}
+<div class="container">
+    <h2>LISTA DE SOLICITUDES</h2>
+    <p>una lista de todas las Adopciones Hechas</p>
+    <table name="table" class="table table-dark table-hover">
+        <thead>
+            <tr>
+                <th>folio. Adopcion</th>
+                <th>Adoptante</th>
+                <th>Razones De Adopcion</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if object_list %} {% for adop in object_list %}
+            <tr>
+                <th>{{adop.id}}</th>
+                <th>{{adop.person.name}} {{adop.person.last_name}}</th>
+                <th>{{adop.reasons}}</th>
+                <th>
+                    {% if adop.created_by == user %}
+                    <a class="btn btn-primary" name="edit" href="{% url 'refuge:adoption_update' adop.id %}">Editar</a>
+                    <a class="btn btn-danger" name="delete" href="{% url 'refuge:adoption_delete' adop.id %}">Eliminar</a> {% endif %}
+                </th>
+            </tr>
+            {% endfor %} {% else %}
+            <h1>NO HAY REGISTROS DE SOLICITUDES</h1> {% endif %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

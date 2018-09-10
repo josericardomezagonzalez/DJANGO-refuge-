@@ -1,0 +1,126 @@
+{% extends 'base/base.html' %} {% load formset_tags %} {% block title %} Form {% endblock%} {%block content %}
+<form name="data-form" action="" method="post">
+    {% csrf_token %}
+    <br>
+    <div class="container">
+        {% if form2%} {% for item in form2%}
+        <div class="row">
+            <div class="col-xs-offset-2 col-10">
+                <div class="form-group form">
+                    <label for="{item.name}}">{{item.label}} </label>
+                    {{item}}
+                </div>
+            </div>
+        </div>
+        {% endfor %} {% endif %} {% if form%} {% for item in form%}
+        <div class="row">
+            <div class="col-xs-offset-2 col-10">
+                <div class="form-group form1">
+                    <label for="{item.name}}">{{item.label}} </label>
+                    {{item}}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="justify-content-center">
+            <h3>Caracteristicas de la mascota</h3>
+        </div>
+
+
+
+        <div id="formset" data-formset-prefix="{{ formset.prefix }}">
+            {{ formset.management_form }}
+            <div data-formset-body>
+                <!-- New forms will be inserted in here -->
+                {% for form in formset %}
+                
+                    <div class="row justify-content-left ">
+                        <div data-formset-form>
+                        {{ form }}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <script type="form-template" data-formset-empty-form>
+                {% escapescript %}
+                <div class="row justify-content-left ">
+                <div data-formset-form>                    
+                    {{ formset.empty_form }}
+                </div>
+                </div>
+                {% endescapescript %}
+            </script>
+            <!-- This button will add a new form when clicked -->
+            <input type="button" value="Add another" data-formset-add>
+            <script>
+            jQuery(function($) {
+                $("#formset").formset({
+                    animateForms: true,
+                    reorderMode: 'dom',
+                });
+            });
+            </script>
+        </div>
+        {% endif %}
+    </div>
+    <input type="hidden" id="person_pk" name="person_pk">
+    <div class="row justify-content-center ">
+        <button class="col-2 btn btn-success" id="save" name="save"> Guardar </button>
+    </div>
+    <br>
+</form>
+{{ form.media }} {{ form2.media }} {{ formset.media }}
+<script>
+$("#id_email").blur(function() {
+    let email = $("#id_email").val()
+    $('#person_pk').val("");
+    $.ajax({
+            url: '{% url "refuge:person_list_json" %}',
+            type: 'GET',
+            dataType: 'json',
+            data: { "email": email },
+        })
+
+        .done(function(data) {
+            console.log(data);
+            add(data);
+        })
+        .fail(function() {
+            console.log("error");
+        })
+        .always(function() {
+            console.log("complete");
+        });
+
+
+});
+
+function add(data) {
+
+    let fields = []
+    $(".form input").each(function() {
+        let element_html_name = $(this).attr('name');
+        if (element_html_name != "email") {
+            $("#id_" + element_html_name).val("");
+            fields.push(element_html_name);
+        }
+
+
+
+    });
+
+    fields.push('home');
+    $("#id_home").val("");
+
+    $.each(data, function(index, item) {
+        for (var i = 0; i < fields.length; i++) {
+            $("#id_" + fields[i]).val(item['fields'][fields[i]]);
+
+        }
+        $('#person_pk').val(item['pk']);
+    });
+
+}
+</script>
+<br>
+<br> {% endblock %}

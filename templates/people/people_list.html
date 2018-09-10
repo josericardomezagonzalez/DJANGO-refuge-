@@ -1,0 +1,53 @@
+{% extends 'base/base.html' %} {% block content %}
+<form method="GET">
+    <div class="form-group row">
+    <label class=col-1 col-form-label" for="textSearch">Buscar</label>
+    <input id="texto" name="name" type="text" class="form-control col-6" id="textSearch" placeholder="nombre">
+  </div>
+</form>
+
+<div id="content1">
+    <h1 class="text-center">Personas Registradas</h1>
+</div>
+<script>
+
+$("#texto").keyup(function() {
+    //$('#textName1').hide();
+    let qs = $("#texto").val()
+  console.log(qs);
+
+
+$.ajax({
+        url: '{% url "refuge:person_list_json" %}',
+        type: 'GET',
+        dataType: 'json',
+        data: {"qs":qs},
+    })
+
+    .done(function(data) {
+        console.log(data);
+        add(data);
+    })
+    .fail(function() {
+        console.log("error");
+    })
+    .always(function() {
+        console.log("complete");
+    });
+
+
+});
+
+
+
+function add(data) {
+
+    $.each(data, function(i, item) {
+
+        $("#content1").append("<div class='card col-6 offset-3 '>  <div class='card-body'>  <h4 class='card-title'> Nombre: " + item['fields'].name + "</h4>    <p class='card-text'> Apellido(s): " + item['fields'].last_name + "<br> Correo: " + item['fields'].email + "<br> Telefono :" + item['fields'].phone + "<br> Edad :" + item['fields'].age + "</p>    </div></div><br>");
+
+    });
+
+}
+</script>
+{% endblock %}

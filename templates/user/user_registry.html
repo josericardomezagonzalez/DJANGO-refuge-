@@ -1,0 +1,61 @@
+{% extends 'base/base.html' %} 
+{% block title %} Register {% endblock%}
+{% block navbar %}    
+{% endblock navbar %}
+{%block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="container">
+        <h2 class="text-center">Datos del Usuario</h2>
+        <div class="row">
+            <div class="col-xs-offset-2 col-10">
+                <div class="form-group">
+                    <label>Nombre de Usuario</label>
+                    <input class="form-control" type="text" name="username">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-2 col-10">
+                <div class="form-group">
+                    <label>Nombre de pila</label>
+                    <input class="form-control" type="text" name="first_name">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-2 col-10">
+                <div class="form-group">
+                    <label>Apellidos</label>
+                    <input class="form-control" type="text" name="last_name">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-2 col-10">
+                <div class="form-group">
+                    <label>Correo</label>
+                    <input class="form-control" type="email" name="email">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-2 col-10">
+                <div class="form-group">
+                    <label>Contraseña</label>
+                    <input class="form-control" type="password" name="password1">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-2 col-10">
+                <div class="form-group">
+                    <label>Repita contraseña</label>
+                    <input class="form-control" type="password" name="password2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn" name="regirter" type="submit"> Guardar </button>
+</form>
+{% endblock %}

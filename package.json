@@ -1,0 +1,22 @@
+{
+  "name": "mascotas",
+  "version": "1.0.0",
+  "description": "session in two steps",
+  "main": "index.js",
+  "scripts": {
+    "start": "node wsamqp/server.js"
+  },
+  "author": "jose ricardo meza gonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "forever-cluster": "^0.16.9",
+    "forever-monitor": "^1.7.1",
+    "fs": "0.0.1-security",
+    "https": "^1.0.0",
+    "jquery-confirm": "^3.3.2",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "sticky-socket-cluster": "0.0.11",
+    "uuid": "^3.3.2"
+  }
+}

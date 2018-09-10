@@ -1,0 +1,33 @@
+{% extends 'base/base.html' %} {% block content %}
+<div id="content1">
+    <h1>Usuarios</h1>
+</div>
+<script>
+$.ajax({
+        url: 'http://localhost:8000/user/listuser/',
+        type: 'GET',
+        dataType: 'json',
+        data: {},
+    })
+
+    .done(function(data) {
+        console.log(data);
+        add(data);
+    })
+    .fail(function() {
+        console.log("error");
+    })
+    .always(function() {
+        console.log("complete");
+    });
+
+function add(data) {
+    $.each(data, function(i, item) {
+
+        $("#content1").append("<div class='card col-6 '>  <div class='card-body'>  <h4 class='card-title'>" + item['fields'].first_name + "</h4>    <p class='card-text'>" + item['fields'].email + "<br>" + item['fields'].last_name + "</p>    </div></div><br>");
+
+    });
+
+}
+</script>
+{% endblock %}

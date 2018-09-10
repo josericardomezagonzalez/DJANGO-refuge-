@@ -1,0 +1,204 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %} Document {% endblock%}</title>
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/jquery.formset.js'%}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootbox.min.js' %}"></script>
+    <script src="{% static 'js/sockets_amqp/livedatafeed.js' %}">
+    </script>
+    <!--<script src="{% static 'js/bootstrap-datetimepicker.js' %}"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+</head>
+
+<body>
+    {% block navbar %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <h5 class="text-danger"> Bienvenido {{ user.username }} &nbsp;</h5>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'refuge:index' %}"> INICIO</a><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Mascotas
+      </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{% url 'refuge:pet_create' %}">Registrar</a>
+                        <a class="dropdown-item" href="{% url 'refuge:pet_list' %}">Listar</a>
+                    </div>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Adopciones
+      </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{% url 'refuge:adoption_create' %}">Solicitar</a>
+                        <a class="dropdown-item" href="{% url 'refuge:adoption_list' %}">Listar solicitudes</a>
+                    </div>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        opciones
+      </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" name="loginOut" href="{% url 'logout'%}">Salir</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    {% endblock %} {% block content %}
+    <h5>contenido del archivo base</h5> {% endblock %} {% block footer %}
+    <script>
+    $(document).ready(function() {
+        $("#myInput").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myTable tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+    });
+    </script>
+    <script>
+    (function() {
+        let token = "{{request.session.session_user_token}}";
+        let user_id = {{ user.id }};
+        let port = {{ request.session.session_user_port }};
+        let host = 'ws://localhost';
+        let actions = {
+            instance_creationevent: (data, token) => {
+                creation_instances_alerts(data);
+            },
+            campaign_request: (data, campaign_id) => {
+
+            },
+            conversion: (data, user_id) => {
+
+            },
+            offer_click: (data, campaign_id) => {
+
+            }
+        };
+        let options = {
+            host: host,
+            port: port,
+            token: token,
+            user_id: user_id,
+            campaign_id: 345
+        };
+        const socket_client = new LiveDataConsumer(options, actions);
+
+        {% if request.session.session_user_two_steps %}
+
+        function creation_instances_alerts(data) {
+            bootbox.hideAll();
+            bootbox.alert({
+                message: data.message,
+                size: 'small'
+            });
+
+        }
+
+        {% endif %}
+
+
+        $("#btn_create_instance").click(async function() {
+
+            await $.ajax({
+                    url: '{% url "refuge:create_instance" %}',
+                    type: 'GET',
+                    dataType: 'json',
+                    data: { "token": token },
+                })
+                .done(function(data) {})
+                .fail(function() {
+                    console.log("error");
+                })
+                .always(function() {
+                    console.log("complete");
+                });
+        });
+
+        $("#btn_update_variables").click(function() {
+            socket_client.change_variables({campaign_id: Math.floor((Math.random() * 10) + 1)});
+
+        });
+
+        
+    })();
+
+
+    // bootbox.hideAll () Ocultar todos los cuadros de diálogo de Bootbox activos actualmente
+    </script>
+    {% endblock%}
+</body>
+
+</html>
+
+
+<!-- actions method
+            confirm_new_session_token: (data, token) => {
+                window_confirm(data);
+            },
+            close_message_confirm: (data, token) => {
+                bootbox.hideAll();
+            },
+            success_session_redirect: (data, token) => {
+                success_session_redirect(data);
+            },
+
+
+        function window_confirm(data) {
+            console.log(data);
+            token_confirm = data.token;
+            let text_confirm = "NO";
+
+            bootbox.confirm({
+                message: "nueva sesión detectada ¿es usted?",
+                buttons: {
+                    confirm: {
+                        label: ' Yes ',
+                        className: 'btn-success',
+                        name: 'yes'
+                    },
+                    cancel: {
+                        label: ' No ',
+                        className: 'btn-danger',
+                        name: 'no'
+                    }
+                },
+                callback: function(result) {
+                    if (result) text_confirm = "YES";
+                    console.log(result)
+                    let confirmation = {
+                        type: 'confirm_new_session',
+                        data: { user_id: id, confirm: text_confirm, token_origin: token, token: token_confirm }
+                    }
+                    confirmation = JSON.stringify(confirmation)
+                    socket_client.send(confirmation)
+                }
+            })
+
+
+        } 
+        function success_session_redirect(data) {
+            if (data.success)
+                window.location.replace("http://localhost:8000/pet/");
+            else
+                window.location.replace("http://localhost:8000/user/has_not_permits/");
+        }
+        -->

@@ -1,0 +1,27 @@
+{
+	"build_systems":
+	[
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "\"/home/ricardo/.pyenv/versions/practicasenv/bin/python\" -u \"$file\""
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "/home/ricardo/practicas"
+		},
+		{
+			"path": "/home/ricardo/.pyenv/versions/practicasenv/lib/python3.6/site-packages/django"
+		},
+		{
+			"path": "/home/ricardo/Escritorio/RabbitMQ"
+		}
+	],
+	"settings":
+	{
+		"python_interpreter": "/home/ricardo/.pyenv/versions/practicasenv/bin/python"
+	}
+}
